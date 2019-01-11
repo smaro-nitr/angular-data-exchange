@@ -10,7 +10,7 @@ export class ComponentOneComponent implements OnInit {
 
   counter: any = 0;
 
-  constructor(private DEService:DataExchangeService) { }
+  constructor(private DEService: DataExchangeService) { }
 
   ngOnInit() {
     this.DEService.componentCounter.subscribe(counter => this.counter = counter)

@@ -8,12 +8,12 @@ import { DataExchangeService } from '../../service/data-exchange/data-exchange.s
 })
 export class ComponentTwoComponent implements OnInit {
 
-  constructor(private DEService:DataExchangeService) { }
+  constructor(private DEService: DataExchangeService) { }
 
   ngOnInit() {
   }
 
-  increaseCounter(){
+  increaseCounter() {
     this.DEService.increaseCounter();
   }
 }

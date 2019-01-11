@@ -9,9 +9,9 @@ export class DataExchangeService {
   serviceCounter: any = new BehaviorSubject(0);
   componentCounter = this.serviceCounter.asObservable();
 
-  constructor() {  }
+  constructor() { }
 
-  increaseCounter(){
+  increaseCounter() {
     this.serviceCounter._value = this.serviceCounter._value + 1;
     this.serviceCounter.next(this.serviceCounter._value)
   }
